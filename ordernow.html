@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - MACX Cosmetics</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    
+    
+    body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.order-now {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.order-now h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-options p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff85c2;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>MACX Cosmetics</h1>
+    </header>
+    <section class="order-now">
+        <h2>Order Now</h2>
+        <div class="contact-options">
+            <p>Call now to place your order: <strong>+91 84529 39172</strong></p>
+            <p>Or fill out the form below:</p>
+        </div>
+        <form action="mailto:macxyy12@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (with country code)</label>
+                <input type="tel" id="phone" name="Phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Product You Want to Buy</label>
+                <input type="text" id="product" name="Product" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="Quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason</label>
+                <textarea id="reason" name="Reason" rows="4" required></textarea>
+            
+            <p>macx cosmetics order receipt </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 MACX Cosmetics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
