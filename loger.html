@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Program</title>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1204724319985727"
+     crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-1204724319985727">
+  <style>
+    body {
+      background: linear-gradient(to right, #FF69B4, #FFFF00, #40E0D0);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form onsubmit="submitForm(event)">
+    <h2>Affiliate Program Signup</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Home Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>Message: "I want to participate in the affiliate program."</p>
+  <p>Rewards: $10 for 10 sales, $200 for 100 sales, $4000 for 1000 sales, and free Macx COSMETICS gifts for over 1000 sales.</p>
+  <p>
+      "Welcome to the Macx COSMETICS Affiliate Program! Join our exclusive community and unlock exciting rewards by becoming an affiliate. As a valued member, you'll receive a unique affiliate link that you can share with your network. For every 10 successful sales generated through your link, you earn $10. Hit the milestone of 100 sales, and you'll enjoy a generous reward of $200. But the excitement doesn't stop there – reach an impressive 1000 sales, and a fantastic $4000 awaits you! As a cherry on top, participants exceeding 1000 sales will receive a special gift bundle of Macx COSMETICS products for a free trial. Embrace the opportunity to share our premium cosmetics with others while earning fantastic rewards. Join now and let your influence sparkle with Macx COSMETICS!"
+  </p>
+  <p>Email submissions to: <a href="mailto:macxyy35@gmail.com">macxyy35@gmail.com</a></p>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+
+      // Gather form information
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+
+      // Construct email body
+      const emailBody = `
+        Name: ${name}
+        Email: ${email}
+        Phone Number: ${phone}
+        Home Address: ${address}
+        
+        Message: "I want to participate in the affiliate program."
+        Rewards: $10 for 10 sales, $200 for 100 sales, $4000 for 1000 sales, and free Macx COSMETICS gifts for over 1000 sales.
+      `;
+
+      // Open default email client with pre-filled information
+      window.location.href = `mailto:macxyy35@gmail.com?subject=Affiliate Program Submission&body=${encodeURIComponent(emailBody)}`;
+    }
+  </script>
+</body>
+</html>
