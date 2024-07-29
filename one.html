@@ -1,1 +1,65 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MACX Cosmetics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .payment-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .payment-box h1 {
+            color: #ff66b2;
+            margin-bottom: 20px;
+        }
+        .payment-box p {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .razorpay-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #ff66b2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .razorpay-button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="payment-box">
+            <h1>Complete Your Purchase</h1>
+            <p>Thank you for choosing MACX Cosmetics. Please click the button below to proceed with your payment.</p>
+            <form>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OeKbaYhNrbVyEp" async></script>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
